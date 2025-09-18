@@ -1,0 +1,20 @@
+# Настройки подключения к хосту ESXi
+esxi:
+  host: ESXI_ADDRESS
+  user: ESXI_USER
+  password: "ESXI_PASSWORD"
+
+# Настройки хранения бэкапов
+storage:
+  # Локальная папка для сохранения бэкапов (destination: file)
+  # или для временных файлов перед загрузкой в облако.
+  local_backup_dir: /tmp/backups/
+
+# Настройки подключения к Nextcloud
+nextcloud:
+  # URL для подключения по WebDAV
+  url: https://your.nexcloud.com/remote.php/dav/files/USERNAME
+  user: USERNAME
+  password: "PASSWORD"
+  # Папка на сервере Nextcloud для хранения бэкапов
+  remote_dir: /FOLDER_NAME
